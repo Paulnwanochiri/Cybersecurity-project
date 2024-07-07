@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurify University</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+section#home {
+    background-color: #f4f4f4;
+}
+
+section#about {
+    background-color: #e2e2e2;
+}
+
+section#courses {
+    background-color: #d1d1d1;
+}
+
+section#contact {
+    background-color: #c0c0c0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    margin: 0.2em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Futurify University</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Futurify University</h2>
+        <p>Shaping the future through education.</p>
+        <img src="campus page.jpg.png" alt="University Campus">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Futurify University is a leading institution offering top-notch education and research opportunities.</p>
+        <img src="About page.jpg.png" alt="About Futurify University">
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Computer Science</li>
+            <li>Business Administration</li>
+            <li>Engineering</li>
+            <li>Art and Design</li>
+        </ul>
+        <img src="courses.jpg.png" alt="Our Courses">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Futurify University. All rights reserved.</p>
+    </footer>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message!');
+});
+    </script>
+</body>
+</html>
